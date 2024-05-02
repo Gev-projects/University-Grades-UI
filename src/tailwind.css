@@ -2,45 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .home-bg {
   background-image: url("https://thumbs.dreamstime.com/z/graduation-celebration-university-students-background-abstrakt-106382616.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
-  height: 805px;
+  /* height: 805px; */
+  height: 980px; /* home-notebook */
   max-width: 100%;
   width: 100%;
 }
 
-.home-black-layer{
+.home-black-layer {
   background-color: black;
   background-size: cover;
-  height: 806px;
+  /* height: 806px; */
+  height: 980px; /* home-notebook */
   max-width: 100%;
   width: 100%;
   position: fixed;
   z-index: -1;
 }
 
-.tab{
+.tab {
   height: max-content;
   width: 50%;
   margin: 0 auto;
   border: 1px solid white;
 }
 
-.tabhead{
+.tab-head {
   background: white;
-}
-
-.tabhead{
   border-right: 1px solid black;
   padding: 2px;
 }
 
-.tabdata{
+.tab-data {
   border: 1px solid white;
   color: white;
 }

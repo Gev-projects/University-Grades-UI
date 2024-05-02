@@ -5,20 +5,20 @@ function TableTemplate({list}) {
   const body = list.map((person, index) => {
     return (
         <tr>
-          <td className="tabdata">{person.name}</td>
-          <td className="tabdata">{person.surname}</td>
-          <td className="tabdata">{person.grade}</td>
+          <td className="tab-data">{person.name}</td>
+          <td className="tab-data">{person.surname}</td>
+          <td className="tab-data">{person.grade}</td>
         </tr>
      )
   }) 
   
   return (
     <table className="tab">
-      <thead className="tabhead">
+      <thead className="tab-head">
         <tr>
-          <th className="tabhead">Name</th>
-          <th className="tabhead">Surname</th>
-          <th className="tabhead">Grade</th>
+          <th className="tab-head">Name</th>
+          <th className="tab-head">Surname</th>
+          <th className="tab-head">Grade</th>
         </tr>
       </thead>
       <tbody>
