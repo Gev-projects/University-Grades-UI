@@ -6,10 +6,8 @@ function UniversityBlock({ univer }) {
 
   const faculties = univer.faculties.map((item, index) => {
     return (
-      <Link to={`/faculties/${item.key}`}>
-        <div key={index} className="text-zinc-300 pt-4 hover:text-white">
-          {item.name}
-        </div>
+      <Link to={`/faculties/${item.key}`} key={index}>
+        <div className="text-zinc-300 pt-4 hover:text-white">{item.name}</div>
       </Link>
     );
   });

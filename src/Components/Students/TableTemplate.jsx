@@ -1,17 +1,16 @@
 import React from "react";
 
-function TableTemplate({list}) {
-  
+function TableTemplate({ list }) {
   const body = list.map((person, index) => {
     return (
-        <tr>
-          <td className="tab-data">{person.name}</td>
-          <td className="tab-data">{person.surname}</td>
-          <td className="tab-data">{person.grade}</td>
-        </tr>
-     )
-  }) 
-  
+      <tr key={index}>
+        <td className="tab-data">{person.name}</td>
+        <td className="tab-data">{person.surname}</td>
+        <td className="tab-data">{person.grade}</td>
+      </tr>
+    );
+  });
+
   return (
     <table className="tab">
       <thead className="tab-head">
@@ -21,11 +20,9 @@ function TableTemplate({list}) {
           <th className="tab-head">Grade</th>
         </tr>
       </thead>
-      <tbody>
-         {body}
-      </tbody>
+      <tbody>{body}</tbody>
     </table>
-  )
+  );
 }
 
 export default TableTemplate;
